@@ -19,7 +19,8 @@ The `setup_rtl_sdr.sh` script automates the process of setting up a Raspberry Pi
 Run
 Run the script with sudo. You will be prompted to enter a custom port number. If you don't specify one, the default port 1234 will be used:
    ```bash
-   sudo ./setup_rtl_sdr.sh```
+   sudo ./setup_rtl_sdr.sh
+   ```
 
 The script will handle the rest. After completion, your Raspberry Pi will be running an RTL-SDR server accessible over your network.
 

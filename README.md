@@ -11,25 +11,19 @@ The `setup_rtl_sdr.sh` script automates the process of setting up a Raspberry Pi
 - RTL-SDR USB dongle
 
 ## Installation
-
 1. Clone this repository or download the `setup_rtl_sdr.sh` script directly to your Raspberry Pi.
 2. Make the script executable:
-
    ```bash
    chmod +x setup_rtl_sdr.sh
 
-## Run
-
+Run
 Run the script with sudo. You will be prompted to enter a custom port number. If you don't specify one, the default port 1234 will be used:
-  '''bash
-  sudo ./setup_rtl_sdr.sh
+   ```bash
+   sudo ./setup_rtl_sdr.sh
 
 The script will handle the rest. After completion, your Raspberry Pi will be running an RTL-SDR server accessible over your network.
 
-## Script Content
-Below is the content of setup_rtl_sdr.sh:
-
-#!/bin/bash
+'#!/bin/bash
 
 # RTL-SDR Server Setup Script for Raspberry Pi
 
@@ -72,7 +66,8 @@ echo "Enabling and starting RTL-SDR server service..."
 sudo systemctl enable rtl_tcp.service
 sudo systemctl start rtl_tcp.service
 
-echo "RTL-SDR server setup is complete. Server is running on port $PORT."
+echo "RTL-SDR server setup is complete. Server is running on port $PORT."'
+
 Usage
 Connect to the RTL-SDR server using any SDR client software by specifying your Raspberry Pi's IP address and the port you set (default is 1234).
 
